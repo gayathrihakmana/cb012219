@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: rgb(221, 191, 195);
+}
+header{
+    width: 100%;
+    bottom: -40px;
+}
+/*------nav bar-----*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+ }
+ /*------logo-----*/
+ .logo{
+     width: 100px;
+     cursor: pointer;
+     align-items: center;
+     display: flex;
+     justify-content: flex-start;
+ }
+ nav img{
+     width: 200px;
+     top: right;
+     margin-bottom: -1rem;
+ }
+ .nav-links{
+     flex: 1;
+     text-align: right;
+ }
+ .nav-links ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 12px;
+     position: relative;
+ }
+ .nav-links ul li a{
+     color: #fff;
+     text-decoration: none;
+     font-size: 16px;
+ }
+ .nav-links ul li::after{
+     content: '';
+     width: 0%;
+     height: 2px;
+     background: gold;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+ }
+ .nav-links ul li:hover::after{
+     width: 100%;
+ }
+ 
+    
+    /*---------Kosgoda Hatcherie---------*/
+    .sub-header-5{
+        height: 50vh;
+        width: 100%;
+        background-image:url(img/Bentota-Turtle-Hatchery\ main.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        
+    }
+    .sub-header-5 h1{
+        margin-top: -3rem;
+        font-family: monospace;
+        font-size: 50px;
+        font-style: italic;
+        color: #bcd81d;
+    }
+    @media screen and (max-width:1000px)and (min-width:200px){
+        .sub-header-5 h1{
+            font-size: 30px;
+            margin-top:-2px;
+        }
+    }
+    /*---------About Kosgoda Hatcherie---------*/
+    .section_top{
+       width: 500px;
+       height: 500px;
+       margin-left: 300px;
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       transform: translate(-120%,50%);
+       border: 10px solid #ffff; 
+       border-radius: 8px;
+       box-shadow: 10px 25px 28px rgba(0,0,0,0.3);
+       overflow: hidden;
+    }
+    .img-slide{
+        width: 500px;
+        display: flex;
+        animation: slide 16s infinite;
+    }
+    .img-slide img{
+        
+        width: 500px;
+        height: 500px;
+        display: flex;
+     }
+ 
+     @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translateX(0);
+        }
+        30%{
+            transform: translateX(-100%);
+        }
+        50%{
+            transform: translateX(-100%);
+        }
+        55%{
+            transform: translateX(-200%);
+        }
+        75%{
+            transform: translateX(-200%);
+        }
+        80%{
+            transform: translateX(-300%);
+        }
+        100%{
+            transform: translateX(-300%);
+        }
+     }
+     
+     .bentota h1{
+        position: relative;
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-family: cursive;
+        color: #031231;
+        text-align: center;
+        margin-top: 4rem;
+        margin-right: 15;
+     }
+     .bentota p{
+        margin-top: 500px;
+        margin-left: -300px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
+        width: 100%;
+        padding:200px 85px 400px 700px;
+        display:flex;
+        text-align: justify;
+     }
+    @media screen and (max-width:1000px)and (min-width:200px){    
+        .bentota p{
+            width: 125%;
+            font-size: 15px;
+            text-align: justify; 
+        }
+        .bentota h1{
+            font-size: 20px;
+        }
+    } 
+     /*---------Location Kosgoda Hatcherie---------*/
+     .img_map{
+       width: 100%;
+       height: 80vh;
+       font-size: larger;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: -40px;
+       margin-top: -3rem;
+       
+     }
+     .img_map h1{
+        color: #050505;
+        margin-bottom: 60px;
+     }
+     .img_map iframe{
+        width: 80%;
+        height: 500px;
+     }
+     /*---------A Look into the Kosgoda Turtle Hatchery---------*/
+
+     .look{
+        width: 700px;
+        height: 400px;
+        padding: 10px 10px 50px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 250px;
+        font-size: 20px;
+        color: black;
+        text-align: justify;
+        background-color: rgb(212, 202, 202);
+        margin-top: 150px;
+        border-radius: 2rem;
+     }
+     .look h1{
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        padding: 10px 10px;
+        margin-top: -5px;
+     }
+     .look ul{
+     list-style: none;
+     width: 100%;
+     padding-left: 0;
+     margin: 0;
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+     margin-left: 0px;
+}
+     .look ul li{
+        line-height: 2;
+        font-style: italic;
+     }
+     @media screen and (max-width:1000px)and (min-width:200px){
+        .look article ul li{
+            margin-bottom: 20px;
+     } 
+     
+}
+/*--------Other Attractions----------*/
+
+h1{
+    margin-bottom: 5px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+   
+}
+.bentota-2{
+    width: 100%;
+    padding: 5px;
+    margin: 70rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10rem;
+    margin-top:150px;
+}
+.bentota-box{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0, .1);
+}
+.bentota-box img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+}
+.bentota-box:hover{
+   transform: scale(1.1);
+   z-index: 2;
+}
+.name{
+    font-size: 25px;
+    margin-top: -80px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(3, 3, 3);
+}
+
+/*---------The Kosgoda Turtle Care – Sri Lanka’s Part in Turtle Conservation---------*/
+.rescue{
+    width: 100%;
+    height: 600px;
+    background-image: url(img/Bentota\ img\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: -60rem;
+}
+.rescue-centre{
+    width: 60%;
+    padding: 50px;
+    color: rgb(56, 3, 3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.rescue-centre h1{
+     font-size: 33px;
+     margin: 50px;
+} 
+.rescue-centre span{
+    background: rgb(190, 188, 43);
+    width: 80%;
+    height: 4px;
+    margin-top: -30px;
+}
+.rescue-centre p{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3px;
+}
+@media screen and (max-width:1000px)and (min-width:200px){
+    .rescue-centre h1{
+        height: 400px;
+        font-size: 20px;
+        margin-bottom: 180px;
+        width: 450px;
+        text-align: center;
+    
+    }
+   .rescue-centre p{
+        display: block;
+        margin-top: -500px;
+        width: 400px;
+        height: 600px;
+    }
+    .rescue-centre{
+        width: 100%;
+        padding: 0;
+    }
+    .rescue{
+        width: 100vh;
+        height: 600px;
+   }
+}
+  
+     /*---------Footer----------*/
+
+    footer{
+        bottom: 0;
+        width: 100%;
+        background: rgb(83,80,126);
+        background: linear-gradient(90deg, rgba(83,80,126,1) 0%, rgba(28,28,136,1) 23%, rgba(38,166,193,1) 95%);
+        overflow: hidden;
+        margin-top: 60rem;
+       
+    }
+    /*---------top part----------*/
+    .main-content{
+        display: flex;
+        padding: 5px 0;
+        /*Animation*/
+        animation: mn1 1.5s ease-in forwards;
+    }
+    @keyframes mn1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .main-content .box{
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 33.33%;
+        padding: 10px 20px;
+    }
+    .box h2{
+         font-size: 1.125rem;
+    }
+    .box .content{
+        margin: 20px 0 0 0;
+        position: relative;
+    }
+    .box .content::before{
+        position: absolute;
+        content: '';
+        top: -10px;
+        height: 2px;
+        width: 100%;
+        background: #f1e8e8;
+    }
+    /*---------Left----------*/
+    .left .content p{
+         text-align: justify;
+    }
+    .left .content .social{
+        margin: 20px 0 0 0;
+    }
+    .left .content .social a{
+        padding: 0 7px;
+    }
+    
+    .left .content .social  span img{
+         height: 40px;
+         width: 40px;
+         background: #f44336;
+         font-size: 1.5rem;
+         color: #ecf0f1;
+         text-align: center;
+         transition: all 0.3 ease-in; 
+    }
+    .left .content .social img{
+        margin: 45px 0 0 0;
+    }
+    .left .content .social a span img:hover{
+        background: #1a1a1a;
+    }
+    /*---------Center----------*/
+    .center .content img{
+        font-size: 1.3rem;
+        background: #f44336;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    }
+    .center .content img:hover{
+        background: #1a1a1a;
+    }
+    .center .content .text-content{
+         font-size: 1.05rem;
+         padding-left: 10px;
+    }
+    .center .content > div{
+        margin-bottom: 10px;
+    }
+    /*---------Right----------*/
+    .right form .text-mail{
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+    }
+    .right form input{
+        width: 70%;
+        height: 3vh;
+        font-size: 1.05rem;
+        background:#2d3436;
+        padding: 8px;
+        border: 1px solid #222222;
+    }
+    .right form input:focus{
+        outline-color: #e74c3c;
+    }
+    
+    .Reference {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+        margin-top: 1rem;
+    }
+    .right form .btn-2{
+        margin-top: 15px;
+    }
+    .right form .btn-2 button{
+        height: 35px;
+        width: 75%;
+        border: none;
+        outline: none;
+        background: #e74c3c;
+        font-size: 1.05rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+    .right form .btn-2 button:hover{
+        background: #fff3f3;
+    }
+    /*---------Bottom----------*/
+    .bottom{
+         position: relative;
+         z-index: 2;
+         opacity: 0;
+         /*Animation*/
+         animation: bt1 1.5s ease-in forwards 1s;
+    }
+    @keyframes bt1{
+        form{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .bottom div{
+        text-align: center;
+        padding: 10px;
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        overflow: hidden;
+    }
+    .bottom div span{
+        color: #000;
+    }
+    .bottom div a{
+        color: #e74c3c;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    /*---------Responsive----------*/
+    @media(max-width:716px){
+        /*top*/
+        .main-content{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .main-content .box{
+            margin: 5px 0;
+        }
+        /*bottom*/
+        .bottom div{
+            font-size: 10px;
+        }
+    }
+    
